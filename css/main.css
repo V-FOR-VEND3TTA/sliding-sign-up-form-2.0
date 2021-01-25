@@ -1,0 +1,151 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#box {
+  height: 350px;
+  width: 1000px;
+  background: #051937;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main {
+  height: 450px;
+  width: 480px;
+  background: #0fbcf9;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400%, 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.login,
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.signup {
+  top: 45%;
+  left: 75%;
+  visibility: hidden;
+}
+
+.login h1,
+.signup h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  color: #051937;
+}
+
+.login input,
+.signup input {
+  height: 40px;
+  width: 300px;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #051937;
+  margin: 5px;
+  background: none;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.login button,
+.signup button {
+  height: 35px;
+  width: 130px;
+  background-color: #051937;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 175px;
+  color: #fff;
+}
+
+#loginBtn,
+#signupBtn {
+  height: 35px;
+  width: 120px;
+  background: transparent;
+  color: #0fbcf9;
+  border: 1px solid #0fbcf9;
+  border-radius: 5px;
+  outline: none;
+  position: absolute;
+  top: 65%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+#signupBtn {
+  left: 25%;
+}
+
+#loginBtn:hover,
+#signupBtn:hover {
+  background-color: #023f92;
+  color: #fff;
+  cursor: pointer;
+}
+
+#signupBtn {
+  left: 25%;
+}
+
+#loginmsg,
+#signupmsg {
+  font-size: 24px;
+  color: #0fbcf9;
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#signupmsg {
+  left: 25%;
+}
+
+/* Animation effect */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
